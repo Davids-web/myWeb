@@ -1,0 +1,7 @@
+{
+	"web": [{"img":"andrea3.jpg","location":"chennai","price":"$200","button":"hai !click me"},
+		    {"img":"anu4.jpg","location":"Hyd","price":"$250","button":"hai !click me"},
+		    {"img":"nayan3.jpg","location":"karnataka","price":"$700","button":"hio !click me"},
+		    {"img":"niveda1.jpg","location":"kerala","price":"$550","button":"hio !click me"}]
+
+}
