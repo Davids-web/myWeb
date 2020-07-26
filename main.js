@@ -21,23 +21,23 @@ function getdata(raw){
 	heading.textContent="haio This is Da Man...! ";//h1 text load to var heading
 	pdata.appendChild(heading);//adding h1 to mani parent class div
 	var mdiv=document.createElement('div');//div tag created
-    mdiv.classList.add('row','col-10','p-4')//<div class="cl1" </div>
+    mdiv.classList.add('bg-info','csol-11','p-4','row')//<div class="cl1" </div>
     pdata.appendChild(mdiv);
     for (i in raw){
 	    var actdiv=document.createElement('div')
-	    actdiv.classList.add('actors')
+	    actdiv.classList.add('actors','bg-warning','col-3','my-4','p-4')
 	    var img=document.createElement('img');//creating <img>
 	    img.src=raw[i].img;//<img src="img">
-	    img.classList.add('col-3')
+	    img.classList.add('col-10')
 	    img.alt="actrs photo..";
 	    
 	    actdiv.appendChild(img)//adding <img> in the <div class=cl1>
 	    mdiv.appendChild(actdiv)//finally the <div><img> adding in the parent class div
-	    var loc=document.createElement('h2')
+	    var loc=document.createElement('h3')
 	    loc.textContent=raw[i].location;
 	    actdiv.appendChild(loc)
 	    mdiv.appendChild(actdiv)
-	    var dlrs=document.createElement('h2')
+	    var dlrs=document.createElement('h3')
 	    dlrs.textContent="$. "+raw[i].price;
 	    actdiv.appendChild(dlrs)
 	    mdiv.appendChild(actdiv)

@@ -1,7 +1,7 @@
 {
-	"web": [{"img":"andrea3.jpg","location":"chennai","price":"200.00","button":"hai !click me"},
-		    {"img":"anu4.jpg","location":"Hyd","price":"250.20","button":"hai !click me"},
-		    {"img":"nayan3.jpg","location":"karnataka","price":"700.34","button":"hio !click me"},
-		    {"img":"niveda1.jpg","location":"kerala","price":"550.65","button":"hio !click me"}]
+	"web": [{"img":"andrea3.jpg","location":"Chennai","price":"200.00","button":"hai !click me"},
+		    {"img":"anu4.jpg","location":"Kerala","price":"250.20","button":"hai !click me"},
+		    {"img":"nayan3.jpg","location":"Karnataka","price":"700.34","button":"hio !click me"},
+		    {"img":"niveda1.jpg","location":"Kerala","price":"550.65","button":"hio !click me"}]
 
 }
