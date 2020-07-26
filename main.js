@@ -21,21 +21,24 @@ function getdata(raw){
 	heading.textContent="haio This is Da Man...! ";//h1 text load to var heading
 	pdata.appendChild(heading);//adding h1 to mani parent class div
 	var div=document.createElement('div');//div tag created
-    div.classList.add('col-10','p-4')//<div class="cl1" </div>
-   
+    div.classList.add('main','col-10','p-4')//<div class="cl1" </div>
+    pdata.appendChild(div);
     for (i in raw){
+	    var actdiv=document.createElement('div')
+	    actdiv.classList.add('actors')
 	    var img=document.createElement('img');//creating <img>
 	    img.src=raw[i].img;//<img src="img">
 	    img.classList.add('col-3')
+	    img.alt="actrs photo..";
 	    
-	    div.appendChild(img)//adding <img> in the <div class=cl1>
-	    pdata.appendChild(div)//finally the <div><img> adding in the parent class div
+	    actdiv.appendChild(img)//adding <img> in the <div class=cl1>
+	    pdata.appendChild(actdiv)//finally the <div><img> adding in the parent class div
 	    var loc=document.createElement('h2')
 	    loc.textContent=raw[i].location;
 	    div.appendChild(loc)
 	    pdata.appendChild(div)
 	    var dlrs=document.createElement('h2')
-	    dlrs.textContent=raw[i].price;
+	    dlrs.textContent="$ : "+raw[i].price;
 	    div.appendChild(dlrs)
 	    pdata.appendChild(div)
 	    var btn=document.createElement('button')
