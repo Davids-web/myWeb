@@ -51,7 +51,7 @@ function getdata(raw){
 function foot(){
  var footer=document.querySelector('.foot');
  const foot=document.createElement('h1')
- foot.textContent="All copy Rights Reviced @ jeneral man";
+ foot.textContent="copy rights not reqired @ jeneral man";
  footer.appendChild(foot)
 
 }
