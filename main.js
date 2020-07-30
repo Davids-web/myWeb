@@ -16,23 +16,23 @@ getdata(read.web);
 foot();})
 
 function getdata(raw){
-	var pdata=document.querySelector('.parent');//class ientified at htmlsaved pdata
-	var heading=document.createElement('h1');//h1 tag created
-	heading.textContent="haio This is Da Man...! ";//h1 text load to var heading
-	pdata.appendChild(heading);//adding h1 to mani parent class div
-	var mdiv=document.createElement('div');//div tag created
-    mdiv.classList.add('bg-info','csol-11','p-4','row')//<div class="cl1" </div>
+	var pdata=document.querySelector('.parent');
+	var heading=document.createElement('h1');
+	heading.textContent="this is JS dom & BS4 stlyle with json";
+	pdata.appendChild(heading);
+	var mdiv=document.createElement('div');
+    mdiv.classList.add('container-fluid','bg-info','p-2','row')
     pdata.appendChild(mdiv);
     for (i in raw){
 	    var actdiv=document.createElement('div')
-	    actdiv.classList.add('actors','bg-warning','col-3','my-4','p-4')
-	    var img=document.createElement('img');//creating <img>
-	    img.src=raw[i].img;//<img src="img">
-	    img.classList.add('col-10')
-	    img.alt="actrs photo..";
+	    actdiv.classList.add('my-3','p-2')
+	    var img=document.createElement('img');
+	    img.src=raw[i].img;
+	    img.classList.add('img-thumbnail')
+	    img.alt="photo";
 	    
-	    actdiv.appendChild(img)//adding <img> in the <div class=cl1>
-	    mdiv.appendChild(actdiv)//finally the <div><img> adding in the parent class div
+	    actdiv.appendChild(img)
+	    mdiv.appendChild(actdiv)
 	    var loc=document.createElement('h3')
 	    loc.textContent=raw[i].location;
 	    actdiv.appendChild(loc)
